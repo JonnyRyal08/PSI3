@@ -1,3 +1,4 @@
+package extraCode;
 //
 //public class Cat {
 //	private String name;

@@ -60,29 +60,44 @@ public class Menu {
 	public int getSecretSize() {
 		return secret.size();
 	}
+//	public int getSex() {
+//		return e.get(sex);
+//	}
+		
 
-	// returns all Burgers in the array
+	// returns all Items in the array
 	public String getAllBurgers() {
-		String burgerMenu = "";
-		burgerMenu += "Burgers:\n";
+		StringBuilder burgerMenu = new StringBuilder();
+		burgerMenu.append("Burgers:\n");
 		System.out.println();
 		for (int b = 0; b < burgers.size(); b++) { // for loop to return list of burgers
 			Item burger = burgers.get(b);
-			burgerMenu += "B" + (b + 1) + " " + burger.toString() + "\n";
+			burgerMenu.append("B").append(b + 1).append(" ").append(burger.toString()).append("\n");
 		}
-		return burgerMenu;
+		return burgerMenu.toString();
 	}
-
+	
 	public String getAllFries() {
-		String fryMenu = "";
-		fryMenu += "Fries:\n";
+		StringBuilder fryMenu = new StringBuilder();
+		fryMenu.append("Fries:\n");
 		System.out.println();
 		for (int f = 0; f < fries.size(); f++) { // for loop to return list of fries
-			Item fry = fries.get(f);
-			fryMenu += "F" + (f + 1) + " " + fry.toString() + "\n";
+			Item burger = fries.get(f);
+			fryMenu.append("F").append(f + 1).append(" ").append(burger.toString()).append("\n");
 		}
-		return fryMenu;
+		return fryMenu.toString();
 	}
+	
+//	public String getAllFries() {
+//		StringBuilder fryMenu = new StringBuilder();
+//		fryMenu += "Fries:\n";
+//		System.out.println();
+//		for (int f = 0; f < fries.size(); f++) { // for loop to return list of fries
+//			Item fry = fries.get(f);
+//			fryMenu += "F" + (f + 1) + " " + fry.toString() + "\n";
+//		}
+//		return fryMenu;
+//	}
 
 	public String getAllDrinks() {
 		String drinkMenu = "";
@@ -120,9 +135,9 @@ public class Menu {
 	// methods
 	public void populateMenu() {
 		// burger
-		burgers.add(new Item("Double Double\t", "Burger", 3.45, "Double"));
 		burgers.add(new Item("Hamburger\t", "Burger", 2.10, "Single"));
 		burgers.add(new Item("Cheeseburger\t", "Burger", 2.40, "Cheese"));
+		burgers.add(new Item("Double Double\t", "Burger", 3.45, "Double"));
 
 		// fries
 		fries.add(new Item("Large Fry\t", "Fries", 2.99, "Large"));
@@ -141,6 +156,11 @@ public class Menu {
 
 		// Not so secret menu
 		secret.add(new Item("Animal Style Double Double\t", "Secret", 4.45, "Animal"));
+		
+		
+		
+		
+		
 
 	}
 

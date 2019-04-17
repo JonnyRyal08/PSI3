@@ -1,3 +1,4 @@
+package extraCode;
 //Jonathan Robertson
 // this is a hackerrank exercise
 import java.io.*;
