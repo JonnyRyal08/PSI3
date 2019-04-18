@@ -61,8 +61,7 @@ public class Item {
 	public String toString() {
 		if (size!= null) {
 			return "(" + size + ") " + name + "\t" + numForm.format(price);
-		}
-		else {
+		}else {
 			return (name + "\t" + numForm.format(price)); 
 		}
 	}

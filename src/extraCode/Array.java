@@ -1,10 +1,10 @@
 package extraCode;
 //Jonathan Robertson
-// this is a hackerrank exercise
+//this is a hackerrank exercise
 import java.io.*;
 import java.util.*;
 
-public class Array {
+public class Array{
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -16,8 +16,7 @@ public class Array {
             lines.add(new ArrayList<Integer>());
             for (int colum = 0; colum < d; colum++){
                 lines.get(row).add(scan.nextInt());
-            }
-            
+            }  
         }
         
         int q = scan.nextInt();
@@ -28,8 +27,7 @@ public class Array {
             int y = scan.nextInt();
             try{
                 System.out.println(lines.get(x-1).get(y-1));
-            }
-            catch (Exception ex){
+            }catch (Exception ex){
                 System.out.println("ERROR!");
             }
         }
