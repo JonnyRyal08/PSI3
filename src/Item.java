@@ -4,8 +4,8 @@
 import java.text.NumberFormat;
 
 public class Item {
-	//private fields
 	
+	//private fields
 	private String name;
 	private String category;
 	private double price;

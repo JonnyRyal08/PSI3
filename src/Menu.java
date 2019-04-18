@@ -7,15 +7,15 @@ import java.util.ArrayList;
 
 public class Menu {
 	// private fields
-	private ArrayList<Item> burgers = new ArrayList<Item>();// arraylist burgers
-	private ArrayList<Item> fries = new ArrayList<Item>(); // arraylist fries
-	private ArrayList<Item> drinks = new ArrayList<Item>(); // arraylist drinks
-	private ArrayList<Item> shakes = new ArrayList<Item>(); // arraylist shakes
-	private ArrayList<Item> secret = new ArrayList<Item>(); // arraylist secret menu
+	private ArrayList<Item> burgers = new ArrayList<Item>();// arraylist burgers stores types of burgers
+	private ArrayList<Item> fries = new ArrayList<Item>(); // arraylist fries stores types of fries
+	private ArrayList<Item> drinks = new ArrayList<Item>(); // arraylist drinks stores types of drinks
+	private ArrayList<Item> shakes = new ArrayList<Item>(); // arraylist shakes stores types of shakes
+	private ArrayList<Item> secret = new ArrayList<Item>(); // arraylist secret menu stores types of secret
 
 	// constructors
 	public Menu() {
-		populateMenu(); // constructor without parameters allows burgers to be put in array
+		populateMenu(); // constructor without parameters allows items to be put in array
 	}
 
 	// public getters and setters
