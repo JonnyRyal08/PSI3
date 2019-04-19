@@ -156,11 +156,6 @@ public class Menu {
 
 		// Not so secret menu
 		secret.add(new Item("Animal Style Double Double\t", "Secret", 4.45, "Animal"));
-		
-		
-		
-		
-		
 
 	}
 

@@ -17,67 +17,67 @@ public class InNOut {
 		Item burger = new Item("Hamburber", "Burger", 2.10, "Single");// finish menu in main.
 		Item fry = new Item("Large Fry", "Fry", 2.99, "Large");
 		Item drink = new Item("Large Drink", "Drink", 1.69, "Large");
-		
+
 		// next line of code creates an object, initializes its fields with values and
 		// passed to the constructor
 		Merchandise teeShirt = new Merchandise("TeeShirt", "Merchandise", 15.99, "Large", "male");
+
 		order.add(burger); // adds an Item burger to arraylist order
-		order.add(teeShirt); // polymorphism by adding merchandise to the arraylist which extends Item
+		order.add(teeShirt); // polymorphism by adding merchandise to the arraylist as type Item
 		order.add(fry);
 		order.add(drink);
 
 		System.out.println("Your order is: " + order);
 		System.out.println();
-		
-		
-		int[] mealNum = new int[3]; //declares one-dimentional array with 3 elements
-		
+
+		int[] mealNum = new int[3]; // declares one-dimentional array with 3 elements
+
 		mealNum[0] = 1;
 		mealNum[1] = 2;
 		mealNum[2] = 3;
-		
+
 		System.out.println("Meal Deals available are: \n");
-		
-		for(int i = 0; i < mealNum.length; i++) {
+
+		for (int i = 0; i < mealNum.length; i++) {
 			System.out.println("Meal: #" + mealNum[i]);
 		}
 		System.out.println();
-		
-		//manually searching for the lowest value in an array
-		int[] mealDeals = {1, 2, 3}; //initialize an array 
-		boolean found; //boolean value to act as a flag.
-		int index; //variable to be used as a counter.
-		
-		found = false; //flag initially set to false
-		index = 0; //counter set to 0
 
-		while(found == false && index < mealDeals.length) {
+		// manually searching for the lowest value in an array
+		int[] mealDeals = { 1, 2, 3 }; // initialize an array
+		boolean found; // boolean value to act as a flag.
+		int index; // variable to be used as a counter.
+
+		found = false; // flag initially set to false
+		index = 0; // counter set to 0
+
+		while (found == false && index < mealDeals.length) {
 			if (mealDeals[index] == 1)
 				found = true;
 			else
 				index = index + 1;
 		}
-		
 		if (found)
 			System.out.println("The first Meal Deal is # " + (index + 1));
 		else
 			System.out.println("This is not the first Meal Deal");
-		
 		System.out.println();
-		
-		//get the sum of an array
-		double[] mdPrices = {4.99, 5.99, 6.99};
+
+		// get the sum of an array
+		double[] mdPrices = { 4.99, 5.99, 6.99 };
 		double sum = getTotal(mdPrices);
 		System.out.println("The sum of the array elements is " + sum);
-			
-		int[] arrayValue = {16, 32, 13, 28, 36, 89, 99, 3, 1}
-		int highest = arrayValue[0];
-		int lowest = arrayValue[0];
+		System.out.println();
+
+		// prints the highest value of arrayValue
+		System.out.println("The highest number in the sample array is: " + getHighest());
+		System.out.println();
+
+		// prints the lowest value of arrayValue
+		System.out.println("The lowest number in the sample array is: " + getLowest());
+		System.out.println();
 		
-		for(int high = [0]; high == highest; i++) {
-			System.out.println("Meal: #" + mealNum[i]);
-		}
-		
+
 //		// gets number of burgers in menu
 //		int burgerSize = menu.getBurgersSize();
 //		System.out.println("Burgers:\t" + burgerSize);
@@ -86,7 +86,6 @@ public class InNOut {
 //		System.out.println("Burgers:\t" + frySize);
 //		
 		System.out.println("Hello, welcome to In-N-Out!");
-		String userName;
 		Scanner in = new Scanner(System.in);
 		System.out.println("What is your name? ");
 		String name = in.nextLine();
@@ -125,12 +124,53 @@ public class InNOut {
 		}
 
 	}
+
 	public static double getTotal(double[] array) {
+		// method calculates through a for loop the Total value of array
 		int index;
 		double total = 0;
-		for(index = 0; index < array.length; index++) {
+		for (index = 0; index < array.length; index++) {
 			total = total + array[index];
 		}
 		return total;
 	}
+
+	public static int getHighest() {
+		// getHighest method searches array for highest value
+		int[] arrayValue = { 16, 32, 13, 28, 36, 89, 99, 3, 1 };
+		int highest = arrayValue[0];
+		// for loop to search through arrayValue for highest value
+		for (int index = 1; index < arrayValue.length; index++) {
+			if (arrayValue[index] > highest)
+				highest = arrayValue[index];
+		}
+		return highest;
+	}
+
+	public static int getLowest() {
+		// getLowest method searches array for lowest value
+		int[] arrayValue = { 16, 32, 13, 28, 36, 89, 99, 3, 0 };
+		int lowest = arrayValue[0];
+		// for loop to search through arrayValue for lowest value
+		for (int index = 1; index < arrayValue.length; index++) {
+			if (arrayValue[index] < lowest)
+				lowest = arrayValue[index];
+		}
+		return lowest;
+	}
+	public static int findNum() {
+		int[] arrayValue = { 16, 32, 13, 28, 36, 89, 99, 3, 0 };
+		boolean found = false;
+		int index = 0;
+		
+		while (found == false && index < arrayValue.length) {
+			if(arrayValue[index] == 99)
+				found = true;
+			else
+				index = index++;
+		}
+		return index;
+		
+	}
+	
 }
