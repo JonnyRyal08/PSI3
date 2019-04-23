@@ -1,8 +1,11 @@
-
-//Jonathan Robertson
+/**
+ * @author jrobertson08
+ *
+ */
 //Item class for Restaurant
 
 import java.text.NumberFormat;
+
 
 public class Item {
 
@@ -23,7 +26,7 @@ public class Item {
 	}
 
 	public Item(String name, String category, double price, String size) {
-		// overloaded constructor adding size
+		// overloaded constructor
 		this.name = name;
 		this.category = category;
 		this.price = price;
@@ -31,7 +34,7 @@ public class Item {
 
 	}
 
-	// assessors and mutators
+	// accessors and mutators
 	public String getName() {
 		return name;
 	}
