@@ -1,12 +1,13 @@
-
-//Jonathan Robertson
-
 //Restaurant In-N-Out 
 //PSI3 updated version
 //need to create other restaurants
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * @author jrobertson08
+ *
+ */
 public class InNOut {
 	public static void main(String[] args) {
 

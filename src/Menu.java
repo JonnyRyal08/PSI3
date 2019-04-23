@@ -1,10 +1,12 @@
-//Jonathan Robertson
 //Menu for In-N-Out
 //prices may or maynot be accurate to store
-//
 
 import java.util.ArrayList;
 
+/**
+ * @author jrobertson08
+ *
+ */
 public class Menu {
 	// private fields
 	private ArrayList<Item> burgers = new ArrayList<Item>();// arraylist burgers stores types of burgers
@@ -63,7 +65,6 @@ public class Menu {
 //	public int getSex() {
 //		return e.get(sex);
 //	}
-		
 
 	// returns all Items in the array
 	public String getAllBurgers() {
@@ -76,7 +77,7 @@ public class Menu {
 		}
 		return burgerMenu.toString();
 	}
-	
+
 	public String getAllFries() {
 		StringBuilder fryMenu = new StringBuilder();
 		fryMenu.append("Fries:\n");
@@ -87,7 +88,7 @@ public class Menu {
 		}
 		return fryMenu.toString();
 	}
-	
+
 //	public String getAllFries() {
 //		StringBuilder fryMenu = new StringBuilder();
 //		fryMenu += "Fries:\n";

@@ -1,4 +1,7 @@
-//Jonathan D Robertson
+/**
+ * @author jrobertson08
+ *
+ */
 public class EnhancedForLoop {
 	
 
