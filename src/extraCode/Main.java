@@ -1,7 +1,9 @@
 package extraCode;
-
+/**
+ * @author jrobertson08
+ *
+ */
 /*
-* @author jrobertson08
 Eagle Eats - Collect order from user and calculate total, tip, delivery charge
 */
 
@@ -17,6 +19,7 @@ import java.util.Scanner;//Scanner imported to take input from user
 	//boolean (true or false)
 	//char - 16 bit unicode character minValue = 0 / maxValue 65,535 
 	//support for character strings via the java.lang.String class
+
 public class Main {
 	// This is a header
 	// public is an access modifier

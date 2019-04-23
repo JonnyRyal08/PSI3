@@ -1,10 +1,15 @@
 package extraCode;
-//Jonathan Robertson
 
 import java.util.Scanner;
-
+/**
+ * @author jrobertson08
+ *
+ */
 public class DoWhileLoops {
 	
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);

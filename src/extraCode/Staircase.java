@@ -3,8 +3,14 @@ package extraCode;
 
 import java.util.*;
 import java.util.Scanner;
-
+/**
+ * @author jrobertson08
+ *
+ */
 public class Staircase {
+	/**
+	 * @param n
+	 */
 	static void staircase(int n) {
 		Scanner scanner = new Scanner(System.in);
 		

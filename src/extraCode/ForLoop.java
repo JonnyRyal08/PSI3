@@ -1,8 +1,14 @@
 package extraCode;
 //Jonathan Robertson
 
+/**
+ * @author jrobertson08
+ *
+ */
 public class ForLoop {
-	
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		for (int i=0; i < 5; i++) { 

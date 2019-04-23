@@ -1,25 +1,32 @@
 package extraCode;
-//Jonathan Robertson
-//in-class exercise
 
 import java.util.Random;
-
-public class Card {
+/**
+ * @author jrobertson08
+ *
+ */
+public class Card { 
 	private String suit;
 	private int number;
 	
+	/**
+	 * @return
+	 */
 	public String getSuit() {
 		return suit;
-		
 	}
+	/**
+	 * @return
+	 */
 	public int getNumber() {
 		return number;
-	
 	}
 	
+	/**
+	 * @param suitToBeSet
+	 */
 	public void setSuit(String suitToBeSet) {
-		suit = suitToBeSet;
-		
+		suit = suitToBeSet;	
 	}
 	public void draw() {
 		Random randomGen = new Random(); //random generator

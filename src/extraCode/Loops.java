@@ -1,8 +1,13 @@
 package extraCode;
-//Jonathan Robertson
-
+/**
+ * @author jrobertson08
+ *
+ */
 public class Loops {
 	
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		/*
 		int value = 0;
