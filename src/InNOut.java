@@ -9,6 +9,9 @@ import java.util.Scanner;
  *
  */
 public class InNOut {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 
 		Menu menu = new Menu(); // creates new object of class Menu

@@ -1,11 +1,16 @@
 package extraCode;
-//Jonathan Robertson
-//this is a hackerrank exercise
+
 import java.io.*;
 import java.util.*;
-
+/**
+ * @author jrobertson08
+ *
+ */
+//this is a hackerrank exercise
 public class Array{
-
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         ArrayList<ArrayList<Integer>> lines = new ArrayList<ArrayList<Integer>>();

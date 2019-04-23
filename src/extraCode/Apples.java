@@ -1,7 +1,12 @@
 package extraCode;
-//Jonathan Robertson
-
+/**
+ * @author jrobertson08
+ *
+ */
 public class Apples {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		int counter = 0; //counter starts at 0
 		while (counter < 10) {

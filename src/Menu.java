@@ -21,44 +21,79 @@ public class Menu {
 	}
 
 	// public getters and setters
+	/**
+	 * @param burger
+	 * @return
+	 */
 	public Item getBurgers(int burger) {
 		return burgers.get(burger);
 	}
 
+	/**
+	 * @param fry
+	 * @return
+	 */
 	public Item getFries(int fry) {
 		return fries.get(fry);
 	}
 
+	/**
+	 * @param drink
+	 * @return
+	 */
 	public Item getDrinks(int drink) {
 		return drinks.get(drink);
 	}
 
+	/**
+	 * @param shake
+	 * @return
+	 */
 	public Item getShakes(int shake) {
 		return shakes.get(shake);
 	}
 
+	/**
+	 * @param animal
+	 * @return
+	 */
 	public Item getSecret(int animal) {
 		return secret.get(animal);
 	}
 
 	// returns the size of the category Burgers
+	/**
+	 * @return
+	 */
 	public int getBurgersSize() {
 		return burgers.size();
 
 	}
 
+	/**
+	 * @return
+	 */
 	public int getFriesSize() {
 		return fries.size();
 	}
 
+	/**
+	 * @return
+	 */
 	public int getDrinksSize() {
 		return drinks.size();
 	}
 
+	/**
+	 * @return
+	 */
 	public int getShakesSize() {
 		return shakes.size();
 	}
 
+	/**
+	 * @return
+	 */
 	public int getSecretSize() {
 		return secret.size();
 	}
@@ -67,6 +102,9 @@ public class Menu {
 //	}
 
 	// returns all Items in the array
+	/**
+	 * @return
+	 */
 	public String getAllBurgers() {
 		StringBuilder burgerMenu = new StringBuilder();
 		burgerMenu.append("Burgers:\n");
@@ -78,6 +116,9 @@ public class Menu {
 		return burgerMenu.toString();
 	}
 
+	/**
+	 * @return
+	 */
 	public String getAllFries() {
 		StringBuilder fryMenu = new StringBuilder();
 		fryMenu.append("Fries:\n");
@@ -100,6 +141,9 @@ public class Menu {
 //		return fryMenu;
 //	}
 
+	/**
+	 * @return
+	 */
 	public String getAllDrinks() {
 		String drinkMenu = "";
 		drinkMenu += "Drinks:\n";
@@ -111,6 +155,9 @@ public class Menu {
 		return drinkMenu;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getAllShakes() {
 		String shakeMenu = "";
 		shakeMenu += "Shakes:\n";
