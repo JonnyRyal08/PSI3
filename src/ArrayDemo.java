@@ -1,4 +1,8 @@
 
+/**
+ * @author jrobertson08
+ *
+ */
 public class ArrayDemo {
 	
 	public static void twoDArrayDemo() {
