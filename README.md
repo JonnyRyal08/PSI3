@@ -1,8 +1,10 @@
 # PSI3
 Integration Project COP2006
 PSI 3
-Make a class in a separate file with private fields, public getters and setters, a constructor with and without parameters
-Overload a method
+   1) Make a class in a separate file with private fields,
+   public getters and setters, 
+   a constructor with and without parameters,
+   2) Overload a method
 Describe inheritance and its benefits
 Develop code that makes use of polymorphism
 Use super and this to access objects and constructors
