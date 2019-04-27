@@ -1,4 +1,4 @@
-
+Integration Project COP2006
 
 # PSI1
    1) Add your name as a comment at top of every file
@@ -37,8 +37,6 @@
    18) Use continue in a loop with a comment describing what it does
 
 # PSI3
-Integration Project COP2006
-PSI 3
    1) Make a class in a separate file with private fields,
       - public getters and setters, 
       - a constructor with and without parameters,
