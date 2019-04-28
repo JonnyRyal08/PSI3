@@ -99,6 +99,7 @@ public class Item {
 	public void setSize(String size) {
 		this.size = size;
 	}
+	
 
 	// toString
 	public String toString() {

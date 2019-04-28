@@ -23,6 +23,8 @@ public class InNOut {
 		Item burger = new Item("Hamburber", "Burger", 2.10, "Single");// finish menu in main.
 		Item fry = new Item("Large Fry", "Fry", 2.99, "Large");
 		Item drink = new Item("Large Drink", "Drink", 1.69, "Large");
+		Item shake = new Item("Large Shake", "Shake", 1.99, "Large");
+		Item secret = new Item("Double Double", "Animal", 3.99, "Animal");
 
 		// next line of code creates an object, initializes its fields with values and
 		// passed to the constructor
@@ -32,6 +34,9 @@ public class InNOut {
 		order.add(teeShirt); // polymorphism by adding merchandise to the arraylist as type Item
 		order.add(fry);
 		order.add(drink);
+		order.add(shake);
+		order.add(secret);
+		
 
 		// introduction to user
 		System.out.println("Hello, welcome to In-N-Out!\nWould you like to place an order?");
@@ -136,6 +141,7 @@ public class InNOut {
 			System.out.println(menu.getAllFries());
 			System.out.println(menu.getAllDrinks());
 			System.out.println(menu.getAllShakes());
+			System.out.println(menu.getAllSecrets());
 			// System.out.println(menu.getAllSecrets());
 			System.out.println();
 
@@ -161,6 +167,7 @@ public class InNOut {
 				break;
 			}
 		}
+		in.close();
 
 	}
 
