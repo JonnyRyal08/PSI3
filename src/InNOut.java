@@ -39,7 +39,7 @@ public class InNOut {
 		Scanner in = new Scanner(System.in);
 		String orderInput = in.nextLine();
 
-		switch (orderInput) {
+		switch (orderInput) { //switch statement to get customer name and start order
 
 		case "Yes":
 		case "yes":
@@ -64,7 +64,7 @@ public class InNOut {
 			Customer.setStartOrder(true);
 			break;
 		}
-		while (Customer.getStartOrder()) {
+		while (Customer.getStartOrder()) { //while statement to continue program 
 
 			System.out.println("Hello " + Customer.getName());
 
@@ -143,7 +143,7 @@ public class InNOut {
 			// System.out.println(burger1);
 			// System.out.println(burger2);
 
-			int menuSelection;
+			//int menuSelection;
 
 			System.out.println("Would you like to order?");
 			String input = in.nextLine();
