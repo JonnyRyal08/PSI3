@@ -2,9 +2,9 @@ Integration Project COP2006
 
 # PSI1
    1) Add your name as a comment at top of every file
-   2) Add a description of the program as a comment at top
-   3) Add a list and description of Java built-in data types within the user interface or in comments
-   4) Add a greeting / introduction to the user 
+   2) Add a description of the program as a comment at top: InNOut.java line 1
+   3) Add a list and description of Java built-in data types: extraCode/Main.java line 13-21
+   4) Add a greeting / introduction to the user: InNOut.java line 34
    5) Use a boolean variable with an appropriate name  (singular noun, lowerCamelCase)
    6) Use an int variable with an appropriate name (singular noun, lowerCamelCase)
    7) Use an double variable with an appropriate name (singular noun, lowerCamelCase)
