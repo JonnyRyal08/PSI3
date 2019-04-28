@@ -1,23 +1,22 @@
 //Jonathan Robertson
 public class Customer {
-	private String name;
-	private boolean startOrder;
+	private static String name;
+	private static boolean startOrder;
 	
-	
-	public String getName() {
+	public static String getName() {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public static void setName(String n) {
+		name = n;
 	}
 	
-	public boolean isStartOrder() {
+	public static boolean getStartOrder() {
 		return startOrder;
 	}
 
-	public void setStartOrder(boolean startOrder) {
-		this.startOrder = startOrder;
+	public static void setStartOrder(boolean sO) {
+		startOrder = sO;
 	}
 	
 }

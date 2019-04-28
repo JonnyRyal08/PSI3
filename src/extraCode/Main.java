@@ -6,6 +6,7 @@ package extraCode;
 /*
 Eagle Eats - Collect order from user and calculate total, tip, delivery charge
 */
+//requirements from PSI1
 
 import java.util.Random;//Random imported to be used as a number generator
 import java.util.Scanner;//Scanner imported to take input from user
