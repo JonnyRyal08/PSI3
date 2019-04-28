@@ -23,7 +23,7 @@ Integration Project COP2006
    5) Use the Math class
    6) Create if/else constructs
    7) Create ternary constructs
-   8) Use a switch statement
+   8) Use a switch statement default package/InNOut.java line 47
    9) Compare two String objects by using the compareTo and equals methods 
       - make a comment describing how == works with objects
    10) Use +, -, *, /, %, ++, --, += 
@@ -37,19 +37,19 @@ Integration Project COP2006
    18) Use continue in a loop with a comment describing what it does
 
 # PSI3
-   1) Make a class in a separate file with private fields,
-      - public getters and setters, 
-      - a constructor with and without parameters,
+   1) Make a class in a separate file with private fields, : default package/Item.java line 11-14
+      - public getters and setters, default package/Item.java line 50-92
+      - a constructor with and without parameters, default package/Item.java line 37
    2) Overload a method
    3) Describe inheritance and its benefits
    4) Develop code that makes use of polymorphism
-   5) Use super and this to access objects and constructors
-   6) Declare, instantiate, initialize and use a one-dimensional array
-   7) Manually find the smallest value in an array
-   8) Get a sum of the values in an array using an accumulator.
-   9) Search an array and identify the index where a value was found.
-   10) Create and use the enhanced for loop
-   11) Declare, instantiate, initialize and use multi-dimensional arrays
-   12) Declare and use an ArrayList of a given type
-   13) Search a two-dimensional array and identify the coordinates where a value was found
-   14) Effectively utilize exception handling for user input of an int
+   5) Use super and this to access objects and constructors default package/Merchandise.java line 20
+   6) Declare, instantiate, initialize and use a one-dimensional array : default package/InNOut.java line 81
+   7) Manually find the smallest value in an array: default package/InNOut.java line 118
+   8) Get a sum of the values in an array using an accumulator: default package/InNOut.java line 
+   9) Search an array and identify the index where a value was found:
+   10) Create and use the enhanced for loop: default package/InNOut.java line 132
+   11) Declare, instantiate, initialize and use multi-dimensional arrays: 
+   12) Declare and use an ArrayList of a given type: default package/InNOut.java line 21
+   13) Search a two-dimensional array and identify the coordinates where a value was found:
+   14) Effectively utilize exception handling for user input of an int:
