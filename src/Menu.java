@@ -196,5 +196,10 @@ public class Menu {
 		secrets.add(new Item("Animal Style Double Double\t", "Secret", 4.45, "Animal"));
 
 	}
+//	// gets number of burgers in menu
+//	int burgerSize = menu.getBurgersSize();
+//	System.out.println("Burgers:\t" + burgerSize);
 
+//	int frySize = menu.getFriesSize();
+//	System.out.println("Burgers:\t" + frySize);
 }

@@ -15,6 +15,11 @@ public class Item {
 	NumberFormat numForm = NumberFormat.getCurrencyInstance();
 
 	// constructors
+	public Item(String name, double price) {
+		//constructor add name, price
+		this.name = name;
+		this.price = price;
+	}
 	/**
 	 * @param name
 	 * @param category
@@ -27,7 +32,6 @@ public class Item {
 		this.price = price;
 
 	}
-
 	/**
 	 * @param name
 	 * @param category
@@ -35,7 +39,7 @@ public class Item {
 	 * @param size
 	 */
 	public Item(String name, String category, double price, String size) {
-		// overloaded constructor
+		// overloaded constructor add name, category, price, and size
 		this.name = name;
 		this.category = category;
 		this.price = price;

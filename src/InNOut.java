@@ -25,6 +25,10 @@ public class InNOut {
 		Item drink = new Item("Large Drink", "Drink", 1.69, "Large");
 		Item shake = new Item("Large Shake", "Shake", 1.99, "Large");
 		Item secret = new Item("Double Double", "Animal", 3.99, "Animal");
+		Item meal1 = new Item("Hamburger Meal", 5.35);
+		Item meal2 = new Item("Cheese Burger Meal", 5.65);
+		Item meal3 = new Item("Double Double Meal", 6.70);
+		Item secretMeal = new Item("Double Double Animal Style", 7.70);
 
 		// next line of code creates an object, initializes its fields with values and
 		// passed to the constructor
@@ -75,14 +79,15 @@ public class InNOut {
 
 			System.out.println("Please take a look at our menu. ");
 
-			System.out.println("Your order is: " + order);
+			
 			System.out.println();
 
-			int[] mealNum = new int[3]; // declares one-dimentional array with 3 elements
+			int[] mealNum = new int[4]; // declares one-dimentional array with 3 elements
 
 			mealNum[0] = 1;
 			mealNum[1] = 2;
 			mealNum[2] = 3;
+			mealNum[3] = 4;
 
 			System.out.println("Meal Deals available are: \n");
 
@@ -112,7 +117,7 @@ public class InNOut {
 			System.out.println();
 
 			// get the sum of an array
-			double[] mdPrices = { 4.99, 5.99, 6.99 };
+			double[] mdPrices = { 5.35, 5.65, 6.70, 7.70 }; 
 			double sum = getTotal(mdPrices); // double variable sum
 			System.out.println("The sum of the array elements is " + sum);
 			System.out.println();
@@ -124,17 +129,11 @@ public class InNOut {
 			// prints the lowest value of arrayValue
 			System.out.println("The lowest number in the sample array is: " + getLowest());
 			System.out.println();
-
+			
+			//enhanced for loop
 			for (Item inhanFor : order) {
-				System.out.println("Item is: " + inhanFor);
+				System.out.println("Order Items are: " + inhanFor);
 			}
-
-//		// gets number of burgers in menu
-//		int burgerSize = menu.getBurgersSize();
-//		System.out.println("Burgers:\t" + burgerSize);
-
-//		int frySize = menu.getFriesSize();
-//		System.out.println("Burgers:\t" + frySize);
 
 			// prints a list of Items in Menu
 			System.out.println(menu.getAllBurgers());// display the values stored in the arraylist menu
@@ -166,6 +165,7 @@ public class InNOut {
 				System.out.println("Did you want to buy some merchandise?");
 				break;
 			}
+			System.out.println("Your order is: \n" + order);
 		}
 		in.close();
 
