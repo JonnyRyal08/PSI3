@@ -49,7 +49,7 @@ Integration Project COP2006
    8) Get a sum of the values in an array using an accumulator: default package/InNOut.java line 
    9) Search an array and identify the index where a value was found:
    10) Create and use the enhanced for loop: default package/InNOut.java line 132
-   11) Declare, instantiate, initialize and use multi-dimensional arrays: 
+   11) Declare, instantiate, initialize and use multi-dimensional arrays: default package/InNOut.java line 207
    12) Declare and use an ArrayList of a given type: default package/InNOut.java line 21
-   13) Search a two-dimensional array and identify the coordinates where a value was found:
+   13) Search a two-dimensional array and identify the coordinates where a value was found: 
    14) Effectively utilize exception handling for user input of an int:
