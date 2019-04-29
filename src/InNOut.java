@@ -4,6 +4,7 @@
 //need to create other restaurants
 //project turned into a list of requirements for integration project
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -72,7 +73,7 @@ public class InNOut {
 			Customer.setStartOrder(true);
 			break;
 		}
-		while (Customer.getStartOrder()) { // while statement to continue program
+//		while (Customer.getStartOrder()) { // while statement to continue program
 
 			System.out.println("Hello " + Customer.getName());
 
@@ -95,7 +96,7 @@ public class InNOut {
 			System.out.println();
 
 			// manually searching for the lowest value in an array
-			int[] mealDeals = { 1, 2, 3 }; // initialize an array
+			int[] mealDeals = { 1, 2, 3, 4 }; // initialize an array
 			boolean found; // boolean value to act as a flag.
 			int index; // variable to be used as a counter.
 
@@ -113,6 +114,8 @@ public class InNOut {
 			else
 				System.out.println("This is not the first Meal Deal");
 			System.out.println();
+			
+			
 
 			// get the sum of an array
 			double[] mdPrices = { 5.35, 5.65, 6.70, 7.70 };
@@ -146,52 +149,88 @@ public class InNOut {
 			// System.out.println(burger1);
 			// System.out.println(burger2);
 
-			// int menuSelection;	
-			System.out.println("Select a number to run exercises. ");
-			System.out.println("1. 2D Array ");
-			System.out.println("2. 2D Array ");
-			System.out.println("3. 2D Array ");
-			System.out.println("4. 2D Array ");
-			System.out.println("5. 2D Array ");
-			String input = in.nextLine();
-
-			switch (input) {
-			case "1":
-
-				int game1[][] = { { 1, 2, 1, 4, 3, 2, 6 }, { 2, 4, 1, 2, 1, 4, 3 } };
-
-				System.out.println("This is the first game results: ");
-				
-
-				for (int row = 0; row < game1.length; row++) {
-					for (int column = 0; column < game1[row].length; column++) {
-						System.out.println(game1[row][column] + "\t");
-					}
-					
-				}
-
-				break;
-			case "2":
-			case "3":
-			case "4":
-				System.out.println("Good choice, I do believe you are going to enjoy your meal.");
-				;
-				System.out.println("What will you be having today?");
-				break;
-
-			case "No":
-			case "no":
-			case "N":
-			case "n":
-				System.out.println("I'm sorry you don't want to eat today.");
-				System.out.println("Did you want to buy some merchandise?");
-				break;
-			}
-			System.out.println("Your order is: \n" + order);
-		}
-		in.close();
-		ArrayDemo game1 = new ArrayDemo();
+			// int menuSelection;
+//			System.out.println("Select a number to run exercises. ");
+//			System.out.println("1. 2D Array ");
+//			System.out.println("2. 2D Array ");
+//			System.out.println("3. 2D Array ");
+//			System.out.println("4. 2D Array ");
+//			System.out.println("5. 2D Array ");
+//			String input = in.nextLine();
+//
+//			switch (input) {
+//			case "1":
+//
+//				int game1[][] = { { 1, 2, 1, 4, 3, 2, 6 }, { 2, 4, 1, 2, 1, 4, 3 } };
+//
+//				//System.out.println("This is the first game results: ");
+//
+//				for (int row = 0; row < game1.length; row++) {
+//					for (int column = 0; column < game1[row].length; column++) {
+//						System.out.println(game1[row][column] + "\t");
+//					}
+//
+//				}
+//
+//				break;
+//			case "2":
+//				System.out.println("Good choice, I do believe you are going to enjoy your meal.");
+//				;
+//				System.out.println("What will you be having today?");
+//				break;
+//
+//				
+//			case "3":
+//			case "4":
+//				System.out.println("Good choice, I do believe you are going to enjoy your meal.");
+//				;
+//				System.out.println("What will you be having today?");
+//				break;
+//
+//			case "No":
+//			case "no":
+//			case "N":
+//			case "n":
+//				System.out.println("I'm sorry you don't want to eat today.");
+//				System.out.println("Did you want to buy some merchandise?");
+//				break;
+//			}
+//			System.out.println("Your order is: \n" + order);
+//		}
+		
+		
 		// ArrayDemo.showScores(game1);
+			
+//		}
+		in.close();
+		
+		int game1[][] = {{1,2,3,4,5,6,7,8,9},{9,8,7,6,5,4,3,2,1}};
+		for(int row = 0; row < game1.length; row++) {
+			System.out.println(Arrays.toString(game1[row]));
+		}
+		System.out.println();
+		
+		int value = 10;
+		int xCoord = -1;
+		int yCoord = -1;
+		int grid[][] = {{1,2,3},{4,5,6,10},{7,8,9}};
+		outerloop:
+		for(int row = 0; row < grid.length; row++) {
+			for(int column = 0; column < grid[row].length; column++) {
+				if (grid[row][column] == value) {
+					xCoord = column + 1;
+					yCoord = row + 1;
+					break outerloop;//breaks outerloop to exit loop
+				}
+			}
+		}
+		if (xCoord == -1 && yCoord == -1) {
+			System.out.println("Value does not exist");
+		} else {
+			System.out.println(value + " Is at the coordinant: " + xCoord + ", " + yCoord);
+		}
+		
+		
 	}
 
 	public static double getTotal(double[] array) {
