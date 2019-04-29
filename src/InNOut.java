@@ -40,7 +40,6 @@ public class InNOut {
 		order.add(drink);
 		order.add(shake);
 		order.add(secret);
-		
 
 		// introduction to user
 		System.out.println("Hello, welcome to In-N-Out!\nWould you like to place an order?");
@@ -48,7 +47,7 @@ public class InNOut {
 		Scanner in = new Scanner(System.in);
 		String orderInput = in.nextLine();
 
-		switch (orderInput) { //switch statement to get customer name and start order
+		switch (orderInput) { // switch statement to get customer name and start order
 
 		case "Yes":
 		case "yes":
@@ -73,13 +72,12 @@ public class InNOut {
 			Customer.setStartOrder(true);
 			break;
 		}
-		while (Customer.getStartOrder()) { //while statement to continue program 
+		while (Customer.getStartOrder()) { // while statement to continue program
 
 			System.out.println("Hello " + Customer.getName());
 
 			System.out.println("Please take a look at our menu. ");
 
-			
 			System.out.println();
 
 			int[] mealNum = new int[4]; // declares one-dimentional array with 3 elements
@@ -117,7 +115,7 @@ public class InNOut {
 			System.out.println();
 
 			// get the sum of an array
-			double[] mdPrices = { 5.35, 5.65, 6.70, 7.70 }; 
+			double[] mdPrices = { 5.35, 5.65, 6.70, 7.70 };
 			double sum = getTotal(mdPrices); // double variable sum
 			System.out.println("The sum of the array elements is " + sum);
 			System.out.println();
@@ -129,8 +127,8 @@ public class InNOut {
 			// prints the lowest value of arrayValue
 			System.out.println("The lowest number in the sample array is: " + getLowest());
 			System.out.println();
-			
-			//enhanced for loop
+
+			// enhanced for loop
 			for (Item inhanFor : order) {
 				System.out.println("Order Items are: " + inhanFor);
 			}
@@ -148,19 +146,43 @@ public class InNOut {
 			// System.out.println(burger1);
 			// System.out.println(burger2);
 
-			//int menuSelection;
-
-			System.out.println("Would you like to order?");
+			// int menuSelection;	
+			System.out.println("Select a number to run exercises. ");
+			System.out.println("1. 2D Array ");
+			System.out.println("2. 2D Array ");
+			System.out.println("3. 2D Array ");
+			System.out.println("4. 2D Array ");
+			System.out.println("5. 2D Array ");
 			String input = in.nextLine();
 
 			switch (input) {
-			case "Yes":
+			case "1":
+
+				int game1[][] = { { 1, 2, 1, 4, 3, 2, 6 }, { 2, 4, 1, 2, 1, 4, 3 } };
+
+				System.out.println("This is the first game results: ");
+				
+
+				for (int row = 0; row < game1.length; row++) {
+					for (int column = 0; column < game1[row].length; column++) {
+						System.out.println(game1[row][column] + "\t");
+					}
+					
+				}
+
+				break;
+			case "2":
+			case "3":
+			case "4":
 				System.out.println("Good choice, I do believe you are going to enjoy your meal.");
 				;
 				System.out.println("What will you be having today?");
 				break;
 
 			case "No":
+			case "no":
+			case "N":
+			case "n":
 				System.out.println("I'm sorry you don't want to eat today.");
 				System.out.println("Did you want to buy some merchandise?");
 				break;
@@ -168,7 +190,8 @@ public class InNOut {
 			System.out.println("Your order is: \n" + order);
 		}
 		in.close();
-
+		ArrayDemo game1 = new ArrayDemo();
+		// ArrayDemo.showScores(game1);
 	}
 
 	public static double getTotal(double[] array) {
