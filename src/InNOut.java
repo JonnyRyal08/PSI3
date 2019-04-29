@@ -151,42 +151,12 @@ public class InNOut {
 
 			// int menuSelection;
 //			System.out.println("Select a number to run exercises. ");
-//			System.out.println("1. 2D Array ");
-//			System.out.println("2. 2D Array ");
-//			System.out.println("3. 2D Array ");
-//			System.out.println("4. 2D Array ");
-//			System.out.println("5. 2D Array ");
 //			String input = in.nextLine();
 //
 //			switch (input) {
-//			case "1":
-//
-//				int game1[][] = { { 1, 2, 1, 4, 3, 2, 6 }, { 2, 4, 1, 2, 1, 4, 3 } };
-//
-//				//System.out.println("This is the first game results: ");
-//
-//				for (int row = 0; row < game1.length; row++) {
-//					for (int column = 0; column < game1[row].length; column++) {
-//						System.out.println(game1[row][column] + "\t");
-//					}
-//
-//				}
-//
+//			case "Yes":
 //				break;
-//			case "2":
-//				System.out.println("Good choice, I do believe you are going to enjoy your meal.");
-//				;
-//				System.out.println("What will you be having today?");
-//				break;
-//
-//				
-//			case "3":
-//			case "4":
-//				System.out.println("Good choice, I do believe you are going to enjoy your meal.");
-//				;
-//				System.out.println("What will you be having today?");
-//				break;
-//
+//		
 //			case "No":
 //			case "no":
 //			case "N":
