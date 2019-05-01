@@ -1,3 +1,4 @@
+package extraCode;
 import java.util.Scanner;
 /**
  * @author jrobertson08
