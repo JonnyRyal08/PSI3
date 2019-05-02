@@ -116,7 +116,7 @@ public class Main {
 		 * + and - additive operators. ++ and -- can be used both pre and post increment and 
 		 * decrement. Short circuit conditional operators will allow for statements to be performed 
 		 * individually from each other. && and || will prevent the second operand from executing 
-		 * unless neccessary
+		 * unless necessary.
 		*/
 		
 	}
