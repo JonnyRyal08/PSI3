@@ -63,7 +63,7 @@ public class Main {
 		price = in.nextDouble();
 		System.out.println("Enter the tip percentage in decimal form: ie. .10 for 10%");
 		tip = in.nextDouble();
-		total = (price + price * tip);
+		total = (price + price * tip); 
 		System.out.println("Your total is: " + "$" + total);
 		in.close();
 		System.out.println();
@@ -118,6 +118,15 @@ public class Main {
 		 * individually from each other. && and || will prevent the second operand from executing 
 		 * unless necessary.
 		*/
+		int f = 1;
+		double g = 2;
+		int h = 3;
+		
+		System.out.println(f++);
+		System.out.println(--f);
+		System.out.println(g*h-f/g);
+		System.out.println(f+h%g);
+		
 		
 	}
 
