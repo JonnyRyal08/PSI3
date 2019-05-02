@@ -22,7 +22,7 @@ Integration Project COP2006
    4) Use the Random class: extraCode/Main.java line 75
    5) Use the Math class: extraCode/Main.java line 82
    6) Create if/else constructs: default package/InNOut.java line 107
-   7) Create ternary constructs:
+   7) Create ternary constructs: extraCode/Main.java line 130
    8) Use a switch statement: default package/InNOut.java line 47
    9) Compare two String objects by using the compareTo and equals methods: extraCode/Main.java line 93-106
       - make a comment describing how == works with objects: extraCode/Main.java line 108-112
