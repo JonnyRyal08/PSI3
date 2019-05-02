@@ -9,8 +9,8 @@ public class IndexOfArray {
 	 * @return
 	 */
 	public static boolean useLoop(String[] anArray, String targetValue) {
-		for(String target: anArray) { //enhanced for loop 
-			if(target.contentEquals(targetValue))
+		for (String target : anArray) { // enhanced for loop
+			if (target.contentEquals(targetValue))
 				return true;
 		}
 		return false;

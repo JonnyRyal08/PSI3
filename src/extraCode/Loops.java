@@ -1,21 +1,19 @@
 package extraCode;
+
 /**
  * @author jrobertson08
  *
  */
 public class Loops {
-	
+
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		/*
-		int value = 0;
-		boolean loop = value < 20; //boolean variable 
-		while(value <= 20) {
-			System.out.println("hello " + value);
-			value = value + 1;
-		}*/
+		 * int value = 0; boolean loop = value < 20; //boolean variable while(value <=
+		 * 20) { System.out.println("hello " + value); value = value + 1; }
+		 */
 //		int width = n; // &height
 //		int lineNum = 1; // &num#'s
 //		int spot = 1;

@@ -26,7 +26,7 @@ public class Menu {
 	 * @param burger
 	 * @return
 	 */
-	public Item getBurgers(int burger) { //method with arguments and return value
+	public Item getBurgers(int burger) { // method with arguments and return value
 		return burgers.get(burger);
 	}
 
@@ -165,7 +165,7 @@ public class Menu {
 		System.out.println();
 		for (int se = 0; se < secrets.size(); se++) { // for loop to return list of secrets
 			Item secret = secrets.get(se);
-			secretMenu.append("Sec").append(se + 1).append(" ").append(secret.toString()+"\n");
+			secretMenu.append("Sec").append(se + 1).append(" ").append(secret.toString() + "\n");
 		}
 		return secretMenu.toString();
 	}

@@ -2,7 +2,7 @@
 public class Customer {
 	private static String name;
 	private static boolean startOrder;
-	
+
 	public static String getName() {
 		return name;
 	}
@@ -10,7 +10,7 @@ public class Customer {
 	public static void setName(String n) {
 		name = n;
 	}
-	
+
 	public static boolean getStartOrder() {
 		return startOrder;
 	}
@@ -18,5 +18,5 @@ public class Customer {
 	public static void setStartOrder(boolean sO) {
 		startOrder = sO;
 	}
-	
+
 }

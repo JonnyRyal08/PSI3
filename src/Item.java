@@ -1,6 +1,8 @@
+
 //Item class for Restaurant
 
 import java.text.NumberFormat;
+
 /**
  * @author jrobertson08
  *
@@ -16,10 +18,11 @@ public class Item {
 
 	// constructors
 	public Item(String name, double price) {
-		//constructor add name, price
+		// constructor add name, price
 		this.name = name;
 		this.price = price;
 	}
+
 	/**
 	 * @param name
 	 * @param category
@@ -32,6 +35,7 @@ public class Item {
 		this.price = price;
 
 	}
+
 	/**
 	 * @param name
 	 * @param category
@@ -103,7 +107,6 @@ public class Item {
 	public void setSize(String size) {
 		this.size = size;
 	}
-	
 
 	// toString
 	public String toString() {

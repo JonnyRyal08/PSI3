@@ -104,16 +104,18 @@ public class InNOut {
 		index = 0; // counter set to 0
 
 		while (found == false && index < mealDeals.length) {
-			if (mealDeals[index] == 1)
+			if (mealDeals[index] == 1) {
 				found = true;
-			else
+			} else {
 				index = index + 1;
+			}
 		}
-		if (found)
+		if (found) {
 			System.out.println("The first Meal Deal is # " + (index + 1));
-		else
+		} else {
 			System.out.println("This is not the first Meal Deal");
-		System.out.println();
+			System.out.println();
+		}
 
 		// get the sum of an array
 		double[] mdPrices = { 5.35, 5.65, 6.70, 7.70 };
@@ -129,8 +131,7 @@ public class InNOut {
 		System.out.println("The lowest number in the sample array is: " + getLowest());
 		System.out.println();
 
-		System.out.println("The number 89 is found at index: " + findNum() + " in the sample" + 
-		" array.\n");
+		System.out.println("The number 89 is found at index: " + findNum() + " in the sample" + " array.\n");
 
 		// enhanced for loop
 		for (Item inhanFor : order) {
@@ -217,8 +218,9 @@ public class InNOut {
 		int highest = arrayValue[0];
 		// for loop to search through arrayValue for highest value
 		for (int index = 1; index < arrayValue.length; index++) {
-			if (arrayValue[index] > highest)
+			if (arrayValue[index] > highest) {
 				highest = arrayValue[index];
+			}
 		}
 		return highest;
 	}
@@ -229,8 +231,9 @@ public class InNOut {
 		int lowest = arrayValue[0];
 		// for loop to search through arrayValue for lowest value
 		for (int index = 1; index < arrayValue.length; index++) {
-			if (arrayValue[index] < lowest)
+			if (arrayValue[index] < lowest) {
 				lowest = arrayValue[index];
+			}
 		}
 		return lowest;
 	}
@@ -240,11 +243,12 @@ public class InNOut {
 		boolean found = false; // boolean variable found set to false for use in while loop
 		int index = 0;
 
-		while (found == false && index < arrayValue.length) { //conditional operators used 
-			if (arrayValue[index] == 89)
+		while (found == false && index < arrayValue.length) { // conditional operators used
+			if (arrayValue[index] == 89) {
 				found = true;
-			else
+			} else {
 				index++;
+			}
 
 		}
 		return index;

@@ -1,4 +1,5 @@
 package extraCode;
+
 /**
  * @author jrobertson08
  *
@@ -8,11 +9,11 @@ public class Apples {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int counter = 0; //counter starts at 0
+		int counter = 0; // counter starts at 0
 		while (counter < 10) {
 			System.out.println(counter);
-			counter++;//fist time loops =0, counts up to 10, !< 10 = stops
-			
+			counter++;// fist time loops =0, counts up to 10, !< 10 = stops
+
 		}
 //		for (int i = 2; i<=10; i+=2) {
 //			System.out.println(i+" ");
