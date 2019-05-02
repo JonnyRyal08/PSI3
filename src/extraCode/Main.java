@@ -111,7 +111,12 @@ public class Main {
 		 * object and not the value of the String or object. Being that firstString and thirdString
 		 * are two different strings even though they have the same value they are not the same in 
 		 * memory thus making the boolean compare to be false
+		 * 
+		 * operator precedence follows math logic, *, / % all multiplicative are performed before 
+		 * + and - additive operators. ++ and -- can be used both pre and post increment and 
+		 * decrement. 
 		*/
+		
 	}
 
 }
