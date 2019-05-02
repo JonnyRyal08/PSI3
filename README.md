@@ -26,8 +26,8 @@ Integration Project COP2006
    8) Use a switch statement: default package/InNOut.java line 47
    9) Compare two String objects by using the compareTo and equals methods: extraCode/Main.java line 93-106
       - make a comment describing how == works with objects: extraCode/Main.java line 108-112
-   10) Use +, -, *, /, %, ++, --, += 
-   11) Use relational operators:
+   10) Use +, -, *, /, %, ++, --, += : Main.java line 66, 125-128
+   11) Use relational operators: InNOut.java line 231-234
    12) Use conditional operators: InNOut.java line 243
    13) Describe operator precedence as a comment: extraCode/Main.java lines 115-117
    14) Create and use while loops: default package/InNout.java line 245
