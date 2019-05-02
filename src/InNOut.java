@@ -75,81 +75,82 @@ public class InNOut {
 		}
 //		while (Customer.getStartOrder()) { // while statement to continue program
 
-			System.out.println("Hello " + Customer.getName());
+		System.out.println("Hello " + Customer.getName());
 
-			System.out.println("Please take a look at our menu. ");
+		System.out.println("Please take a look at our menu. ");
 
-			System.out.println();
+		System.out.println();
 
-			int[] mealNum = new int[4]; // declares one-dimentional array with 3 elements
+		int[] mealNum = new int[4]; // declares one-dimentional array with 3 elements
 
-			mealNum[0] = 1;
-			mealNum[1] = 2;
-			mealNum[2] = 3;
-			mealNum[3] = 4;
+		mealNum[0] = 1;
+		mealNum[1] = 2;
+		mealNum[2] = 3;
+		mealNum[3] = 4;
 
-			System.out.println("Meal Deals available are: \n");
+		System.out.println("Meal Deals available are: \n");
 
-			for (int i = 0; i < mealNum.length; i++) {
-				System.out.println("Meal: #" + mealNum[i]);
-			}
-			System.out.println();
+		for (int i = 0; i < mealNum.length; i++) {
+			System.out.println("Meal: #" + mealNum[i]);
+		}
+		System.out.println();
 
-			// manually searching for the lowest value in an array
-			int[] mealDeals = { 1, 2, 3, 4 }; // initialize an array
-			boolean found; // boolean value to act as a flag.
-			int index; // variable to be used as a counter.
+		// manually searching for the lowest value in an array
+		int[] mealDeals = { 1, 2, 3, 4 }; // initialize an array
+		boolean found; // boolean value to act as a flag.
+		int index; // variable to be used as a counter.
 
-			found = false; // flag initially set to false
-			index = 0; // counter set to 0 
+		found = false; // flag initially set to false
+		index = 0; // counter set to 0
 
-			while (found == false && index < mealDeals.length) {
-				if (mealDeals[index] == 1)
-					found = true;
-				else
-					index = index + 1;
-			}
-			if (found)
-				System.out.println("The first Meal Deal is # " + (index + 1));
+		while (found == false && index < mealDeals.length) {
+			if (mealDeals[index] == 1)
+				found = true;
 			else
-				System.out.println("This is not the first Meal Deal");
-			System.out.println();
-			
-			
+				index = index + 1;
+		}
+		if (found)
+			System.out.println("The first Meal Deal is # " + (index + 1));
+		else
+			System.out.println("This is not the first Meal Deal");
+		System.out.println();
 
-			// get the sum of an array
-			double[] mdPrices = { 5.35, 5.65, 6.70, 7.70 };
-			double sum = getTotal(mdPrices); // double variable sum
-			System.out.println("The sum of the array elements is " + sum);
-			System.out.println();
+		// get the sum of an array
+		double[] mdPrices = { 5.35, 5.65, 6.70, 7.70 };
+		double sum = getTotal(mdPrices); // double variable sum
+		System.out.println("The sum of the array elements is " + sum);
+		System.out.println();
 
-			// prints the highest value of arrayValue
-			System.out.println("The highest number in the sample array is: " + getHighest());
-			System.out.println();
+		// prints the highest value of arrayValue
+		System.out.println("The highest number in the sample array is: " + getHighest());
+		System.out.println();
 
-			// prints the lowest value of arrayValue
-			System.out.println("The lowest number in the sample array is: " + getLowest());
-			System.out.println();
+		// prints the lowest value of arrayValue
+		System.out.println("The lowest number in the sample array is: " + getLowest());
+		System.out.println();
 
-			// enhanced for loop
-			for (Item inhanFor : order) {
-				System.out.println("Order Items are: " + inhanFor);
-			}
+		System.out.println("The number 89 is found at index: " + findNum() + "in the sample" + 
+		" array.\n");
 
-			// prints a list of Items in Menu
-			System.out.println(menu.getAllBurgers());// display the values stored in the arraylist menu
-			System.out.println(menu.getAllFries());
-			System.out.println(menu.getAllDrinks());
-			System.out.println(menu.getAllShakes());
-			System.out.println(menu.getAllSecrets());
-			// System.out.println(menu.getAllSecrets());
-			System.out.println();
+		// enhanced for loop
+		for (Item inhanFor : order) {
+			System.out.println("Order Items are: " + inhanFor);
+		}
 
-			// prints an item in menu
-			// System.out.println(burger1);
-			// System.out.println(burger2);
+		// prints a list of Items in Menu
+		System.out.println(menu.getAllBurgers());// display the values stored in the arraylist menu
+		System.out.println(menu.getAllFries());
+		System.out.println(menu.getAllDrinks());
+		System.out.println(menu.getAllShakes());
+		System.out.println(menu.getAllSecrets());
+		// System.out.println(menu.getAllSecrets());
+		System.out.println();
 
-			// int menuSelection;
+		// prints an item in menu
+		// System.out.println(burger1);
+		// System.out.println(burger2);
+
+		// int menuSelection;
 //			System.out.println("Select a number to run exercises. ");
 //			String input = in.nextLine();
 //
@@ -167,30 +168,28 @@ public class InNOut {
 //			}
 //			System.out.println("Your order is: \n" + order);
 //		}
-		
-		
+
 		// ArrayDemo.showScores(game1);
-			
+
 //		}
 		in.close();
-		
-		int game1[][] = {{1,2,3,4,5,6,7,8,9},{9,8,7,6,5,4,3,2,1}};
-		for(int row = 0; row < game1.length; row++) {
+
+		int game1[][] = { { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, { 9, 8, 7, 6, 5, 4, 3, 2, 1 } };
+		for (int row = 0; row < game1.length; row++) {
 			System.out.println(Arrays.toString(game1[row]));
 		}
 		System.out.println();
-		
+
 		int value = 10;
 		int xCoord = -1;
 		int yCoord = -1;
-		int grid[][] = {{1,2,3},{4,5,6,10},{7,8,9}};
-		outerloop:
-		for(int row = 0; row < grid.length; row++) {
-			for(int column = 0; column < grid[row].length; column++) {
+		int grid[][] = { { 1, 2, 3 }, { 4, 5, 6, 10 }, { 7, 8, 9 } };
+		outerloop: for (int row = 0; row < grid.length; row++) {
+			for (int column = 0; column < grid[row].length; column++) {
 				if (grid[row][column] == value) {
 					xCoord = column + 1;
 					yCoord = row + 1;
-					break outerloop;//breaks outerloop to exit loop
+					break outerloop;// breaks outerloop to exit loop
 				}
 			}
 		}
@@ -199,8 +198,7 @@ public class InNOut {
 		} else {
 			System.out.println(value + " Is at the coordinant: " + xCoord + ", " + yCoord);
 		}
-		
-		
+
 	}
 
 	public static double getTotal(double[] array) {
@@ -243,10 +241,10 @@ public class InNOut {
 		int index = 0;
 
 		while (found == false && index < arrayValue.length) {
-			if (arrayValue[index] == 99)
+			if (arrayValue[index] == 89)
 				found = true;
 			else
-				index = index++;
+				index++;
 
 		}
 		return index;
