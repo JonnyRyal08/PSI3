@@ -114,7 +114,9 @@ public class Main {
 		 * 
 		 * operator precedence follows math logic, *, / % all multiplicative are performed before 
 		 * + and - additive operators. ++ and -- can be used both pre and post increment and 
-		 * decrement. 
+		 * decrement. Short circuit conditional operators will allow for statements to be performed 
+		 * individually from each other. && and || will prevent the second operand from executing 
+		 * unless neccessary
 		*/
 		
 	}

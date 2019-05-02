@@ -240,7 +240,7 @@ public class InNOut {
 		boolean found = false; // boolean variable found set to false for use in while loop
 		int index = 0;
 
-		while (found == false && index < arrayValue.length) {
+		while (found == false && index < arrayValue.length) { //conditional operators used 
 			if (arrayValue[index] == 89)
 				found = true;
 			else
