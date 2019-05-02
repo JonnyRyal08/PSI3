@@ -129,7 +129,7 @@ public class InNOut {
 		System.out.println("The lowest number in the sample array is: " + getLowest());
 		System.out.println();
 
-		System.out.println("The number 89 is found at index: " + findNum() + "in the sample" + 
+		System.out.println("The number 89 is found at index: " + findNum() + " in the sample" + 
 		" array.\n");
 
 		// enhanced for loop
