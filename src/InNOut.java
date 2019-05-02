@@ -101,7 +101,7 @@ public class InNOut {
 			int index; // variable to be used as a counter.
 
 			found = false; // flag initially set to false
-			index = 0; // counter set to 0
+			index = 0; // counter set to 0 
 
 			while (found == false && index < mealDeals.length) {
 				if (mealDeals[index] == 1)
