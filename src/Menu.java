@@ -26,7 +26,7 @@ public class Menu {
 	 * @param burger
 	 * @return
 	 */
-	public Item getBurgers(int burger) {
+	public Item getBurgers(int burger) { //method with arguments and return value
 		return burgers.get(burger);
 	}
 
