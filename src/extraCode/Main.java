@@ -127,8 +127,8 @@ public class Main {
 		System.out.println(f + h % g);
 		
 		int whatTimeIsIt = 2359;
-		String theTimeItIs = (whatTimeIsIt < 2400) ? "\nLet's get this party started!" : "\nWe started "
-				+ "yet?";
+		String theTimeItIs = (whatTimeIsIt < 2400) ? "\nLet's get this party started!" : "\nWe "
+				+ "started yet?";
 		System.out.println(theTimeItIs);
 		
 
