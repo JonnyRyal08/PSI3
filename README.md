@@ -28,7 +28,7 @@ Integration Project COP2006
       - make a comment describing how == works with objects: extraCode/Main.java line 108-112
    10) Use +, -, *, /, %, ++, --, += 
    11) Use relational operators:
-   12) Use conditional operators
+   12) Use conditional operators: InNOut.java line 243
    13) Describe operator precedence as a comment: extraCode/Main.java lines 115-117
    14) Create and use while loops: default package/InNout.java line 245
    15) Create and use for loops: default package/InNOut.java line 93
