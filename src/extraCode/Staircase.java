@@ -16,9 +16,9 @@ public class Staircase {
 		
 		int numberOfRows = scanner.nextInt();
 		
-		staircase(numberOfRows);
-			for (int i=0; i<=n; i++);
-			System.out.println(numberOfRows);
+//		staircase(numberOfRows);
+//			for (int i=0; i<=n; i++);
+//			System.out.println(numberOfRows);
 	}
 		
 }

@@ -26,10 +26,10 @@ public class InNOut {
 		Item drink = new Item("Large Drink", "Drink", 1.69, "Large");
 		Item shake = new Item("Large Shake", "Shake", 1.99, "Large");
 		Item secret = new Item("Double Double", "Animal", 3.99, "Animal");
-		Item meal1 = new Item("Hamburger Meal", 5.35);
-		Item meal2 = new Item("Cheese Burger Meal", 5.65);
-		Item meal3 = new Item("Double Double Meal", 6.70);
-		Item secretMeal = new Item("Double Double Animal Style", 7.70);
+//		Item meal1 = new Item("Hamburger Meal", 5.35);
+//		Item meal2 = new Item("Cheese Burger Meal", 5.65);
+//		Item meal3 = new Item("Double Double Meal", 6.70);
+//		Item secretMeal = new Item("Double Double Animal Style", 7.70);
 
 		// next line of code creates an object, initializes its fields with values and
 		// passed to the constructor
